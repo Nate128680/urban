@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+
+        <title>Urban Life</title>
+    </head>
+    <body class="dark-theme">
+        <!--MOUSE-->
+        <div class="ball"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+                     <!-- popup -->
+    <div class="popup">
+        <!-- top bar -->
+        <div class="top-bar">
+            <p class="image-name">img1.png</p>
+            <span ><a> <i class='bx bx-window-close close-btn'></i> </a></span>
+        </div>
+        <!-- arrows -->
+        <button class="arrow-btn left-arrow"><a><img src="/assets/img/arrow.png" alt=""></a></button>
+        <button class="arrow-btn right-arrow"><a><img src="/assets/img/arrow.png" alt=""></a></button>
+        <!-- image -->
+        <img src="" class="large-image" alt="">
+        <!-- image-index -->
+        <h1 class="index">01</h1>
+    </div>
+
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <img class="logoimg" src="/assets/img/logo-text.png"></img>   
+                    </a>
+                </div>
+
+                <div class="nav__menu hover" id="nav-menu">
+                    <ul class="nav__list hover">
+                        <li class="nav__item con2"><a href="#home" class="nav__link active">Inicio</a></li>
+                        <li class="nav__item"><a href="#recomp" class="nav__link">Recompensas</a></li>
+                        <li class="nav__item"><a href="#access" class="nav__link">Guía de acceso</a></li>
+                        <li class="nav__item"><a href="https://docs.google.com/document/d/1vwjdOUkMWrCkV_eY5B8EKEPrwJfDMcPJDz-sfhbXdlc/edit" class="nav__link">Normativa</a></li>
+                        <li id="theme" class="toggle"><a class=""><i class='nav__item bx bxs-sun theme-mode'></i></a></li>
+<!--                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <div class="bg-wave"></div>
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title type">¡Bienvenido!<span class="home__title-color">
+
+
+                        <p id="lonetime" class="home__title-color"></p>
+
+                        <script>
+                        // Set the date we're counting down to
+                        var countDownDate = new Date("Aug 27, 2022 17:00:00").getTime();
+                        
+                        // Update the count down every 1 second
+                        var x = setInterval(function() {
+                        
+                          // Get today's date and time
+                          var now = new Date().getTime();
+                        
+                          // Find the distance between now and the count down date
+                          var distance = countDownDate - now;
+                        
+                          // Time calculations for days, hours, minutes and seconds
+                          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        
+                          // Display the result in the element with id="lonetime"
+                          document.getElementById("lonetime").innerHTML = days + "d " + hours + "h "
+                          + minutes + "m " + seconds + "s ";
+                        
+                          // If the count down is finished, write some text
+                          if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("lonetime").innerHTML = "Urban Life";
+                          }
+                        }, 1000);
+                        </script>
+                    </span><a href="https://docs.google.com/forms/d/e/1FAIpQLScoFvAz1IGX6vRmt7MytDbS4fgb26b7aF2jFhcPAAZKTJezow/viewform" target="_blank" class="home__title-button con">Hacer whitelist</a>
+                    <a href="#recomp" class="home__title-button2 con">Ver recompensas</a> </h1>
+                    
+                </div>
+
+                <div class="con home__social section hover">
+                    <a href="https://www.instagram.com/urbanlifecomunity/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/UrbanLiffe" target="_blank" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://discord.gg/J8eEKvMQPp" target="_blank" class="home__social-icon"><i class='bx bxl-discord' ></i></a>
+                </div>
+                <span class=""></span>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="recomp">
+                <h2 class="section-title">Recompensas</h2>
+
+                <section class="" id="work">
+
+      <!--               <div class="gallery">
+                        <div class="gallery-image">
+                            <img src="/assets/img/galeria-1.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="/assets/img/galeria-2.png" alt="" class="image">
+                        </div>
+                    </div> -->
+    
+                    <div class="work__container bd-grid">
+                        <a  class="work__img">
+                            <img class="image" src="assets/img/galeria-1.png" alt="">
+                            <div>
+                                <h2 class="about__subtitle">Peds</h2>
+                                <p class="about__category">Discord Info Coins</p>
+                                <p class="about__text">Toda <strong>DONACIÓN </strong> Será empleada para el propio mantenimiento del dicho servidor acambio de una adquisición de una de estas opciones para el propio usuario.</p>          
+                            </div> 
+                        </a>
+                        <a  class="work__img">
+                            <img class="image" src="assets/img/galeria-2.png" alt="">
+                            <div>
+                                <h2 class="about__subtitle">Locales</h2>
+                                <p class="about__category">Discord Info Coins</p>
+                                <p class="about__text">Toda <strong>DONACIÓN </strong> Será empleada para el propio mantenimiento del dicho servidor acambio de una adquisición de una de estas opciones para el propio usuario.</p>           
+                            </div> 
+                        </a>
+                        <a  class="work__img">
+                            <img class="image" src="assets/img/galeria-3.png" alt="">
+                            <div>
+                                <h2 class="about__subtitle">Vehículos</h2>
+                                <p class="about__category">Discord Info Coins</p>
+                                <p class="about__text">Toda <strong>DONACIÓN </strong> Será empleada para el propio mantenimiento del dicho servidor acambio de una adquisición de una de estas opciones para el propio usuario.</p>           
+                            </div> 
+                        </a>
+                    </div>
+                </section>
+
+<!--                 <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">test</h2>
+                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                    </div>                                   
+                </div> -->
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="access">
+                <h2 class="section-title">Guía de acceso</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">¿Como acceder?</h2>
+                        <p class="skills__text">El servidor abrirá el próximo día 1 de septiembre. Para acceder al servidor deberás contar con una copia del juego comprada (ya sea en Steam, Epic Games o Rockstar Games). También deberás descargar FiveM para poder conectarte a nuestro servidor. Es esencial que estés dentro de nuestro Discord para poder obtener el rango que te dará acceso al servidor. Por último, deberás superar un sencillo proceso de whitelist escrita que servirá para filtrar a los usuarios y obtener la máxima calidad dentro de nuestro servidor.</p>
+                        
+                    </div>
+                    
+                    
+                    <div>              
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx bxs-dollar-circle skills__icon'></i>
+                                <span class="skills__name"><a href="https://store.rockstargames.com/es/game/buy-gta-v" target="_blank" class="guiatext">Comprar GTA V</a></span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-cloud-download skills__icon'></i>
+                                <span class="skills__name"><a href="https://fivem.net/" target="_blank" class="guiatext">Descargar Fivem</a></span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-user-badge skills__icon'></i>
+                                <span class="skills__name"><a href="https://discord.gg/J8eEKvMQPp" target="_blank" class="guiatext">Acceder al Discord</a></span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx bxs-badge-check skills__icon'></i>
+                                <span class="skills__name"><a href="https://docs.google.com/forms/d/e/1FAIpQLScoFvAz1IGX6vRmt7MytDbS4fgb26b7aF2jFhcPAAZKTJezow/viewform" target="_blank" class="guiatext">Hacer la whiteslit escrita</a></span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+<!--             <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section> -->
+
+
+    <script src="/assets/js/app.js"></script>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Urban Life</p>
+            <div class="footer__social">
+                <a href="https://www.youtube.com/channel/UCNY5w3g3op9esH6kKpt03CQ" target="_blank" class="footer__icon"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://www.instagram.com/urbanlifecomunity/" target="_blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/UrbanLiffe" target="_blank" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">Coded with <i class='bx bx-heart' ></i> by <a class="nate" target="_blank" href="https://www.instagram.com/xgrxa/">Nate</a></p>
+        </footer>
+
+        <script>
+            var theme = document.getElementById("theme");
+
+            var test = "nav__item bx bxs-sun theme-mode"
+
+            theme.onclick = function(){
+                document.body.classList.toggle("light-theme")};
+
+
+                let btn = document.querySelector(".toggle");
+                let icon = btn.querySelector(".bxs-sun")
+
+                btn.onclick = function(){
+                    if(icon.classList.contains("bxs-sun")){
+                        icon.classList.replace("bxs-sun", "bxs-moon");
+                        document.body.classList.toggle("light-theme")
+                    }
+                    else{
+                        icon.classList.replace("bxs-moon", "bxs-sun")
+                        document.body.classList.toggle("light-theme")
+                    }
+                }
+
+
+                
+
+        </script>
+
+
+        <!--===== SCROLL REVEAL =====-->
+                <script src="https://unpkg.com/scrollreveal"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/mouse.js"></script>
+    </body>
+</html>
